@@ -1,0 +1,2 @@
+class IncorrectInputError(TypeError):
+    pass
