@@ -45,3 +45,45 @@ class Calculator:
             return result
         except TypeError:
             raise IncorrectInputError('Wrong Input')
+    
+    def squareroot(self, x: float) -> float:
+        try:
+            result = math.sqrt(x)
+            return result
+        except TypeError:
+            raise IncorrectInputError('wrong input')
+        
+    def percentage(self, x: float) -> float:
+        try:
+            result = x / 100
+            return result
+        except TypeError:
+            raise IncorrectInputError('wrong input')
+    
+    def floordivision(self, x, y) -> float:
+        try:
+            result = x // y
+            return result
+        except TypeError:
+            raise IncorrectInputError('wrong input')
+        
+    def log_ten(self, x) -> float:
+        try:
+            result = math.log10(x)
+            return result
+        except TypeError:
+            raise IncorrectInputError('wrong input')
+        
+    def modulo(self, x, y):
+        try:
+            result = x % y
+            return result
+        except TypeError:
+            raise IncorrectInputError
+    
+    def customlog(self, x, y):
+        try:
+            result = math.log(x,y)
+            return result
+        except TypeError:
+            raise IncorrectInputError('wrong input')
